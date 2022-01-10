@@ -32,7 +32,7 @@ $ curl 10.104.234.226
 
 # Step 1 - Pentest
 
-Write a script to exploit log4shell and show that the exploit succeed. (You can use existing tools like JNDIExploit for this)
+Write a script to exploit log4shell and show that the exploit succeed. (You can use existing tools like JNDIExploit for this https://github.com/black9/Log4shell_JNDIExploit)
 
 # Step 2 - Detection and prevention
 
