@@ -4,7 +4,7 @@
 
 # Security - Challenge
 
-Exploit log4shell and improve security posture.
+Exploit log4shell and improve the application's security posture.
 
 
 
@@ -15,10 +15,11 @@ Exploit log4shell and improve security posture.
 
 # Setup
 
-Start the environment with `./start.sh`. This will deployed a vulnerable log4shell container inside the kubernetes cluster.
+Start the environment with `./start.sh`. This will deploy a vulnerable log4shell container inside the kubernetes cluster.
 
-Start `minikube tunnel` to access to the service deployed https://minikube.sigs.k8s.io/docs/handbook/accessing/#using-minikube-tunnel. Get the EXTERNAL-IP using :
-```$ kubectl get service log4shell
+Start `minikube tunnel` to access the service you already deployed https://minikube.sigs.k8s.io/docs/handbook/accessing/#using-minikube-tunnel. Get the EXTERNAL-IP using :
+```
+$ kubectl get service log4shell
 NAME        TYPE           CLUSTER-IP       EXTERNAL-IP      PORT(S)        AGE
 log4shell   LoadBalancer   10.104.234.226   10.104.234.226   80:31703/TCP   6m19s
 ```
@@ -32,14 +33,14 @@ $ curl 10.104.234.226
 
 # Step 1 - Pentest
 
-Write a script to exploit log4shell and show that the exploit succeed. (You can use existing tools like JNDIExploit for this https://github.com/black9/Log4shell_JNDIExploit)
+Write a script to exploit log4shell and show that the exploit succeeded. (You can use existing tools like JNDIExploit for this https://github.com/black9/Log4shell_JNDIExploit)
 
 # Step 2 - Detection and prevention
 
-Answer to these questions :
+Answer these questions :
 
 How could we detect this exploit ?
-How could we prevent this exploit to work without fixing the vulnerability ?
+How could we prevent this exploit from working without fixing the vulnerability ?
 
 # Bonus 1
 
@@ -48,7 +49,6 @@ Execute commands against the mysql database using the log4shell vulnerability.
 # Bonus 2
 
 Implement some parts of the detection and prevention advices.
-
 
 
 Reference:
