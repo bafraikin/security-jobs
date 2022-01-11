@@ -57,7 +57,10 @@ I you cannot connect, ensure there is no firewall blocking the connection on you
 
 # Step 1 - Pentest
 
-Write a script to exploit log4shell and show that the exploit succeeded. (You can use existing tools like JNDIExploit for this https://github.com/black9/Log4shell_JNDIExploit)
+Write a script to exploit log4shell and show that the exploit succeeded.
+You can use existing tools like JNDIExploit for this
+* https://github.com/black9/Log4shell_JNDIExploit
+* https://github.com/pimps/JNDI-Exploit-Kit/raw/master/target/JNDI-Exploit-Kit-1.0-SNAPSHOT-all.jar from https://github.com/pimps/JNDI-Exploit-Kit
 
 # Step 2 - Detection and prevention
 
