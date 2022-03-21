@@ -66,7 +66,12 @@ If you know that you own a log4j component vulnerable that you won't fix, you sh
 
 ## How to prevent without fix
 
-To prevent without fix it. You could add a firewall rules or a WAF rules to block ldap request to others servers you don't own. You may also block JNDI request to servers you don't own. To list your own LDAP server which may legitimately receive request from log4shell vulnerable asset should be easy. If it's not, you may need to redisign your network as it's dangerous to run a network like that. You could also remove the access to internet for the vulnerable tool if you don't need it.
+To prevent without fix it. You could add some firewall rules or some WAF rules to block JNDI request to others servers you don't own. That mean you should do a whitelist of ip where your server can do those request. All the others are blocked.  Log4shell request may be LDAP RMI or HTTP request. you should block all those kind of request from your log server for IP you don't know. 
+
+If you follow the principle of defense in depth, a log server should not be able to make any kind of request, block them all.  Except maybe the one for making backups if necessary.  Furthermore, if you need to do some request on your server,  to list your own servers which may legitimately receive request from your log4shell vulnerable asset should be easy. If it's not, you may need to redisign your network as it's dangerous to run a network like that. You could also remove the access to internet for the vulnerable tool if you don't need it.
+
+
+
 
 
 
