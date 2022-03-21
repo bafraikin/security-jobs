@@ -57,7 +57,7 @@ java -jar mysql_utils.jar sys "show columns from user_summary;"
 # Question
 
 ## How could we detect this exploit
-The answer may vary because of what does the server have to do regulary. But the simpliest solution is probably this. 
+The answer may vary because of what the server have to do on a regulary basis. But the simpliest solution is probably this: 
 The exploit involve that the server, which use the Log4j library vulnerable, make some ldap / rmi / http request. If you log the network somewhere you should be able to see that request from the server. So you could say that every time your server make that kind of request himself to an IP you don't know as an ldap rmi or http server you own. This is the things where you can detect the exploit. you can't really hide or make this exploit works other way. 
 
 An organisation should always log his network and check for scetchy behaviour on it. Snort is a good tool to do this. 
