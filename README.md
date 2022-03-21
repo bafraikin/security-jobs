@@ -20,7 +20,8 @@ you should get a shell on the machine
 
 we need mysql client. but there is no internet on the pod
 
-launch a php server next to the file `mysql_utlis.jar` with the command
+launch a php server next to the file `mysql_utlis.jar` with the command.   ( This file is in exploit/ ) 
+I build this jar file. the source code is next to it
 
 ```
 php -S 0.0.0.0:8000
