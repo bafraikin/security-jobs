@@ -42,6 +42,17 @@ java -jar mysql_utlis.jar db_name mysql_request
 
 To prove I did some sql request let's do some capture
 
+```
+java -jar mysql_utils.jar mysql "show databases;"
+```
+
+![screen_capture](images/screen_capture_mysql_request.png)
+
+```
+java -jar mysql_utils.jar sys "show columns from user_summary;"
+```
+
+![screen_capture](images/screen_capture_mysql01.png)
 
 # Question
 

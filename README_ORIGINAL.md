@@ -1,4 +1,4 @@
-![Lifen](lifen.png)
+![Lifen](images/lifen.png)
 
 > Care together
 
