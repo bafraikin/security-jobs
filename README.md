@@ -70,16 +70,4 @@ To prevent without fix it. You could add some firewall rules or some WAF rules t
 
 If you follow the principle of defense in depth, a log server should not be able to make any kind of request, block them all.  Except maybe the one for making backups if necessary.  Furthermore, if you need to do some request on your server,  to list your own servers which may legitimately receive request from your log4shell vulnerable asset should be easy. If it's not, you may need to redisign your network as it's dangerous to run a network like that. You could also remove the access to internet for the vulnerable tool if you don't need it.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+You may also use the tool NCCGROUP provide  https://github.com/nccgroup/log4j-jndi-be-gone but it will block any JNDI request.
